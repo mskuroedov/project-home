@@ -173,7 +173,10 @@ header {
   background: #000;
   border: 0;
   z-index: 10;
-  transition: all .2s; }
+  transition: all .2s;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
   .owl-btn-left:hover, .owl-btn-right:hover {
     transform: scale(1.05); }
   .owl-btn-left svg, .owl-btn-right svg {
@@ -439,7 +442,8 @@ header {
 
 .block-11 {
   padding-top: 5rem;
-  padding-bottom: 5rem; }
+  padding-bottom: 5rem;
+  background: #eee; }
   .block-11 .title {
     margin-bottom: 2rem; }
   .block-11 .text {

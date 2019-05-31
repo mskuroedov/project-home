@@ -543,9 +543,18 @@
 <script src="js/parallax.min.js"></script>
 <script type="text/javascript">
     $(document).ready(function () {
-        $("#our-works").lightGallery({});
-        $("#real-build").lightGallery({});
-        $("#feedback").lightGallery({});
+        $("#our-works").lightGallery({
+            thumbnail:false,
+            download:false
+        });
+        $("#real-build").lightGallery({
+            thumbnail:false,
+            download:false
+        });
+        $("#feedback").lightGallery({
+            thumbnail:false,
+            download:false
+        });
         var etapCarousel = $('.etaps');
         etapCarousel.owlCarousel({
             items: 5,
