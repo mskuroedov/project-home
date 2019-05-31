@@ -411,6 +411,8 @@ header {
       .block-9 .gallery a img {
         max-width: 100%;
         width: 100%; }
+      .block-9 .gallery a:hover img {
+        transform: scale(1.05); }
 
 .block-10 {
   padding-top: 3rem;
