@@ -1,0 +1,39 @@
+.promo{
+  padding-top: 7rem;
+  padding-bottom: 5rem;
+  background-image: linear-gradient(to bottom, rgba(0,0,0,.6) 0%, rgba(0,0,0,.6) 100%),url(../assets/logo.png) ;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  &__title{
+    font-weight: 900;
+    font-size: 3.2rem;
+    font-family: 'Roboto Slab', serif;
+    margin-bottom: 1.5rem;
+    @media(max-width: $mdWidth){
+      font-weight: 900;
+      font-size: 1.9rem;
+      margin-bottom: 1.5rem;
+    }
+  }
+  &__subtitle{
+    font-weight: bold;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    @media(max-width: $mdWidth){
+      font-weight: normal;
+      font-size: 1rem;
+      margin-bottom: 1rem;
+    }
+  }
+  &__text{
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    @media(max-width: $mdWidth){
+      font-weight: normal;
+      font-size: 1.15rem;
+      margin-bottom: 1.2rem;
+    }
+  }
+}

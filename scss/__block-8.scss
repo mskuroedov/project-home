@@ -1,0 +1,35 @@
+.block-8 {
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+
+  .title {
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    margin-bottom: 3rem;
+  }
+
+  .img__block {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+
+    .item {
+      width: 33.333333%;
+      flex: 33.333333%;
+
+      img {
+        width: 100%;
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media(max-width: $mdWidth) {
+    .img__block .item {
+      width: 100%;
+      flex: 100%;
+    }
+  }
+}

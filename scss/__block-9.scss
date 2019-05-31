@@ -1,0 +1,22 @@
+.block-9{
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background: #000;
+  .title{
+    color: white;
+    margin-bottom: 3rem;
+  }
+
+  .gallery{
+    display: flex;
+    align-items: center;
+    a{
+      width: 25%;
+      overflow: hidden;
+      img{
+        max-width: 100%;
+        width: 100%;
+      }
+    }
+  }
+}

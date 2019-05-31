@@ -1,0 +1,28 @@
+$mdWidth:767px;
+
+body{
+  font-family: 'Lato', sans-serif;
+}
+a,button,input{
+  outline: none !important;
+}
+
+
+.title{
+  font-weight: bold;
+  font-size: 2.9rem;
+  font-family: 'Roboto Slab', serif;
+  color: #333;
+  @media (max-width: $mdWidth) {
+    font-size: 2.3rem;
+  }
+}
+
+.subtitle{
+  font-size: 1.5rem;
+  color: #333;
+  @media (max-width: $mdWidth) {
+    font-size: 1.3rem;
+  }
+}
+

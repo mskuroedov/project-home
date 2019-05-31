@@ -1,0 +1,28 @@
+.block-11 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+
+  .title {
+    margin-bottom: 2rem;
+  }
+
+  .text {
+    font-size: 1.2rem;
+    max-width: 90%;
+    margin: 0 auto;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-size: 1.4rem;
+  }
+
+  @media(max-width: $mdWidth) {
+    img {
+      margin-top: 4rem;
+    }
+  }
+
+}

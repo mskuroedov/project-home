@@ -1,0 +1,41 @@
+.block-7{
+  padding-top: 3rem;
+  padding-bottom: 2rem;
+  .title{
+    margin-bottom: 4rem;
+  }
+
+  .gallery{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    a{
+      width: 50%;
+      padding: 0 2rem;
+      overflow: hidden;
+      margin-bottom: 2rem;
+      img{
+        max-width: 100%;
+        transition: all .2s;
+      }
+      &:hover{
+        img{
+          transform: scale(1.05);
+        }
+      }
+    }
+  }
+  @media(max-width: $mdWidth){
+
+    .gallery{
+      a{
+        width: 100%;
+        padding: 0 2%;
+        img{
+          max-width: 100%;
+        }
+      }
+    }
+  }
+
+}

@@ -1,0 +1,68 @@
+header{
+  padding-top: 1.5rem;
+  padding-bottom: .5rem;
+  background-image: linear-gradient(to left,#21C0FC 0%,#0F66A4 100%);
+  .row{
+    align-items: center;
+  }
+  .nav-list{
+    list-style: none;
+    padding-left: 0;
+  }
+  .nav-item{
+    display: inline-block;
+    margin-right: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    a{
+      border-bottom: 1px solid transparent;
+      color: white;
+      transition: all .2s;
+      margin-top: -.2rem;
+      padding-bottom: .2rem;
+
+      &:hover{
+        text-decoration: none;
+        color: rgb(119,239,120);
+        border-bottom-color: rgb(119,239,120) ;
+      }
+    }
+  }
+
+  .phone{
+    display: block;
+    font-size: .9rem;
+    text-align: right;
+    margin-bottom: .2rem;
+    color: white;
+    font-weight: bold;
+    i{
+      margin-right: .5rem;
+      font-size: .9rem;
+    }
+    &:hover{
+      color: rgb(119,239,120);
+      text-decoration: none;
+    }
+  }
+  .mail{
+    display: block;
+    font-size: .8rem;
+    padding-left: 1.7rem;
+    color: white;
+    text-align: right;
+    &:hover{
+      color: rgb(119,239,120);
+      text-decoration: none;
+    }
+  }
+
+  @media(max-width: 767px){
+    .phone {
+      font-size: .7rem;
+    }
+    .mail{
+      font-size: .65rem;
+    }
+  }
+}

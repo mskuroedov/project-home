@@ -1,0 +1,36 @@
+.block-10 {
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background: black;
+
+  .title {
+    color: white;
+    margin-bottom: 1rem;
+  }
+
+  .subtitle {
+    color: white;
+    margin-bottom: 3rem;
+  }
+
+  .personal__tile {
+    margin-bottom: 5rem;
+    color: white;
+
+    img {
+      margin-bottom: 2rem;
+      max-width: 100%;
+      width: 100%;
+    }
+
+    .name {
+      font-weight: bold;
+      font-size: 1.6rem;
+    }
+
+    .work {
+      font-size: 1.2rem;
+    }
+  }
+
+}
