@@ -1,8 +1,36 @@
-.block-4{
-  padding-top: 8rem;
-  padding-bottom: 20rem;
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%);
-  .title{
+footer{
+  padding-top: 3rem;
+  padding-bottom: 5rem;
+  background: #222;
+  .logo{
+    max-width: 100%;
+  }
+
+  .phone{
+    display: block;
+    font-size: 1.1rem;
+    text-align: right;
+    margin-bottom: .2rem;
     color: white;
+    font-weight: bold;
+    i{
+      margin-right: .5rem;
+      font-size: .9rem;
+    }
+    &:hover{
+      color: rgb(119,239,120);
+      text-decoration: none;
+    }
+  }
+  .mail{
+    display: block;
+    font-size: 1rem;
+    padding-left: 1.7rem;
+    color: white;
+    text-align: right;
+    &:hover{
+      color: rgb(119,239,120);
+      text-decoration: none;
+    }
   }
 }
