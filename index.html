@@ -285,10 +285,13 @@
     </div>
 </section>
 <section class="block-4">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center">
-                <div class="title">Проектируем дома из всех <br>известных материалов</div>
+    <div class="parallax"></div>
+    <div class="block-4__content">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center">
+                    <div class="title">Проектируем дома из всех <br>известных материалов</div>
+                </div>
             </div>
         </div>
     </div>
@@ -752,11 +755,13 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/modules/lg-thumbnail.min.js"></script>
-<script src="js/parallax.min.js"></script>
+<!--<script src="js/parallax.min.js"></script>-->
+<script src="js/jquery.paroller.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/quiz.js"></script>
 <script>
     // quizStart()
+    $(".block-4 .parallax").paroller({ factor: 0.5, factorXs: 0.2, });
 </script>
 </body>
 </html>

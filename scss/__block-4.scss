@@ -1,11 +1,29 @@
 .block-4{
-  padding-top: 8rem;
-  padding-bottom: 20rem;
   //background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%),url("../assets/block-4-bg.jpg");
-  background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%);
-  background-position: center;
-  background-size: cover;
+  //background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%);
+  position: relative;
   .title{
     color: white;
+  }
+  &__content{
+    background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%);
+    position: relative;
+    z-index: 3;
+    padding-top: 8rem;
+    padding-bottom: 20rem;
+  }
+  .parallax{
+    background-image: url("../assets/block-4-bg.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+  }
+  .container{
   }
 }

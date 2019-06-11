@@ -32,7 +32,9 @@ $(document).ready(function () {
         etapCarousel.trigger('next.owl.carousel')
     });
 });
-$('.block-4').parallax({imageSrc: 'assets/block-4-bg.jpg'});
+
+
+// $('.block-4').parallax({imageSrc: 'assets/block-4-bg.jpg'});
 
 
 //input float
