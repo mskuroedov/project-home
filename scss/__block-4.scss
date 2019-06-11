@@ -1,7 +1,10 @@
 .block-4{
   padding-top: 8rem;
   padding-bottom: 20rem;
+  //background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%),url("../assets/block-4-bg.jpg");
   background-image: linear-gradient(to bottom, rgba(0,0,0,.7)0%, rgba(0,0,0,.7)100%);
+  background-position: center;
+  background-size: cover;
   .title{
     color: white;
   }

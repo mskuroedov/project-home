@@ -55,7 +55,7 @@
                 <div class="promo__text">Заполните анкету и мы подберем несколько вариантов готовых проектов и вышлем на
                     почту
                 </div>
-                <a href="#" role="button" class="btn btn-lg btn-warning">Заполнить анкету</a>
+                <a href="#" role="button" class="btn btn-lg btn-warning" id="quiz-btn">Заполнить анкету</a>
             </div>
         </div>
     </div>
@@ -102,7 +102,7 @@
         </div>
     </div>
 </section>
-<section class="block-2">
+<section class="block-2 d-none">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -198,7 +198,7 @@
                                 <li>Планы этажей размерные</li>
                                 <li>Планы расстановки мебели</li>
                                 <li>Планы полов</li>
-                                <li>3Д-планы</li>
+                                <!--<li>3Д-планы</li>-->
                                 <li>Фасады</li>
                                 <li>Разрезы</li>
                                 <li>4 ракурса 3Д-вида дома</li>
@@ -296,41 +296,47 @@
 
 <section class="block-5">
     <div class="container">
-        <form>
+        <form id="small-app">
             <div class="row align-items-end">
                 <div class="col-12 text-center">
                     <div class="title">Оставьте заявку и получите несколько примеров готовых проектов</div>
                 </div>
                 <div class="col-12">
                     <div class="form__block">
-
                         <div class="form_input">
-                            <input type="text" id="app1name">
-                            <label for="app1name">Имя</label>
+                            <input type="text" id="app1name" name="name">
+                            <label for="app1name">Имя*</label>
                         </div>
                         <div class="form_input">
-                            <input type="text" id="app1phone">
-                            <label for="app1phone">Телефон</label>
+                            <input type="text" id="app1phone" name="phone">
+                            <label for="app1phone">Телефон*</label>
                         </div>
                         <div class="form_input">
-                            <input type="text" id="app1mail">
-                            <label for="app1mail">E-mail</label>
+                            <input type="text" id="app1mail" name="mail">
+                            <label for="app1mail">E-mail*</label>
                         </div>
                         <div class="form_input">
-                            <input type="text" id="app1mat">
+                            <input type="text" id="app1mat" name="material">
                             <label for="app1mat">из какого материала?</label>
                         </div>
-                        <button class="btn btn-lg btn-warning">Отправить</button>
+                        <button class="btn btn-lg btn-warning" type="submit">Отправить</button>
                     </div>
                 </div>
                 <div class="col-12 text-center mt-3">
                     <span class="policy-link">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></span>
                 </div>
+                <div class="col-12 col-md-4 mx-auto">
+                    <div class="error-block"></div>
+                    <div class="success-block">
+                        Ваша заявка отправлена! <br>
+                        Наш менеджер скоро свяжется с вами!
+                    </div>
+                </div>
             </div>
         </form>
     </div>
 </section>
-<section class="block-6">
+<section class="block-6 d-none">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -455,7 +461,7 @@
         </div>
     </div>
 </section>
-<section class="block-10">
+<section class="block-10 d-none">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -591,47 +597,49 @@
         </div>
     </div>
 </section>
-
-
 <section class="block-13">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
                 <div class="title">Оставьте заявку <br>на расчет стоимости <br>проекта</div>
             </div>
-            <div class="col-12 col-md-6 col-lg-4 mx-auto">
-                <div class="input__form">
-                    <label for="">Опишите свою задачу *</label>
-                    <textarea name="description" id="" onkeyup="auto_grow(this)"></textarea>
-                </div>
-                <div class="input__form files">
-                    <label for="">Прикрепите свои эскизы или наброски</label>
-                    <input type="file" name="files" multiple id="files-input">
-                    <div class="icon upload-icon">
-                        <i class="fas fa-upload"></i>
+            <div class="col-12 col-md-6 col-lg-5 mx-auto">
+                <form id="last-form">
+                    <div class="input__form">
+                        <label for="">Опишите свою задачу *</label>
+                        <textarea name="description" id="" onkeyup="auto_grow(this)"></textarea>
                     </div>
-                    <div class="text">Добавить файлы</div>
-                    <div class="files__container" style="display:none;">
-                        <div class="file-name">asd</div>
-                        <div class="file-name">asd</div>
-                        <div class="file-name">asd</div>
-                        <div class="file-name">asd</div>
+                    <!--<div class="input__form files">-->
+                    <!--<label for="">Прикрепите свои эскизы или наброски</label>-->
+                    <!--<input type="file" name="files" multiple id="files-input">-->
+                    <!--<div class="icon upload-icon">-->
+                    <!--<i class="fas fa-upload"></i>-->
+                    <!--</div>-->
+                    <!--<div class="text">Добавить файлы</div>-->
+                    <!--<div class="files__container" style="display:none;">-->
+                    <!--</div>-->
+                    <!--</div>-->
+                    <div class="input__form">
+                        <label for="">Как к вам обращаться? *</label>
+                        <input type="text" name="name">
                     </div>
-                </div>
-                <div class="input__form">
-                    <label for="">Как к вам обращаться? *</label>
-                    <input type="text" name="name">
-                </div>
-                <div class="input__form">
-                    <label for="">Оставьте телефон для связи *</label>
-                    <input type="text" name="phone">
-                </div>
-                <div class="input__form">
-                    <label for="">Укажите свой Email *</label>
-                    <input type="text" name="mail">
-                </div>
-                <button class="btn btn-block btn-warning mt-4">Отправить</button>
-                <div class="personal-text">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></div>
+                    <div class="input__form">
+                        <label for="">Оставьте телефон для связи *</label>
+                        <input type="text" name="phone">
+                    </div>
+                    <div class="input__form">
+                        <label for="">Укажите свой Email *</label>
+                        <input type="text" name="mail">
+                    </div>
+                    <button class="btn btn-block btn-warning mt-4" type="submit">Отправить</button>
+                    <div class="personal-text">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных
+                        данных</a></div>
+                    <div class="error-block"></div>
+                    <div class="success-block">
+                        Ваша заявка отправлена! <br>
+                        Наш менеджер скоро свяжется с вами!
+                    </div>
+                </form>
             </div>
         </div>
     </div>
@@ -650,88 +658,105 @@
     </div>
 </footer>
 
+<section id="quiz" class="quiz" style="display: none">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-auto ml-auto">
+                <button class="close-btn">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 mx-auto" quiz-step="0">
+                <div class="quiz__title">Сколько этажей?</div>
+                <div class="quiz__checkbox">
+                    <input type="checkbox" id="q1">
+                    <label for="q1">1 этаж</label>
+                </div>
+                <div class="quiz__checkbox">
+                    <input type="checkbox" id="q2">
+                    <label for="q2">1 этаж + мансарда</label>
+                </div>
+                <div class="quiz__checkbox">
+                    <input type="checkbox" id="q3">
+                    <label for="q3">2 этажа</label>
+                </div>
+                <div class="quiz__checkbox">
+                    <input type="checkbox" id="q4">
+                    <label for="q4">3 этажа</label>
+                </div>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="1" style="display: none">
+                <div class="quiz__title">Сколько примерно м2</div>
+                <input type="text">
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="2" style="display: none">
+                <div class="quiz__title">Какой материал рассматриваете для строительства</div>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="3" style="display: none">
+                <div class="quiz__title">Выберите стиль дома(один)</div>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="4" style="display: none">
+                <div class="quiz__title">Как вас зовут?</div>
+                <input type="text">
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="5" style="display: none">
+                <div class="quiz__title">Контактные данные</div>
+                <input type="text">
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="6" style="display: none">
+                <div class="quiz__title">Ваша почта</div>
+                <input type="text">
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-5 mx-auto" quiz-step="0">
+                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="1" style="display: none">
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="2" style="display: none">
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="3" style="display: none">
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="4" style="display: none">
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="5" style="display: none">
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+            </div>
+            <div class="col-12 col-md-5 mx-auto" quiz-step="6" style="display: none">
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary" onclick="finishQuiz()">finish quiz</button>
+            </div>
+        </div>
+    </div>
+</section>
+
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/modules/lg-thumbnail.min.js"></script>
 <script src="js/parallax.min.js"></script>
-<script type="text/javascript">
-    $(document).ready(function () {
-        $("#our-works").lightGallery({
-            thumbnail: false,
-            download: false
-        });
-        $("#real-build").lightGallery({
-            thumbnail: false,
-            download: false
-        });
-        $("#feedback").lightGallery({
-            thumbnail: false,
-            download: false
-        });
-        var etapCarousel = $('.etaps');
-        etapCarousel.owlCarousel({
-            items: 5,
-            responsive: {
-                0: {
-                    items: 1,
-                    dotsEach: 4
-                },
-                768: {
-                    items: 6,
-                    dotsEach: 4
-                }
-            }
-        });
-        $('.etaps__container .owl-btn-left').on('click', function () {
-            etapCarousel.trigger('prev.owl.carousel')
-        });
-        $('.etaps__container .owl-btn-right').on('click', function () {
-            etapCarousel.trigger('next.owl.carousel')
-        });
-    });
-    $('.block-4').parallax({imageSrc: 'assets/logo.png'});
-</script>
+<script src="js/main.js"></script>
+<script src="js/quiz.js"></script>
 <script>
-    $('.form_input input').on('focus', function () {
-        $(this).next().addClass('floating');
-    })
-    $('.form_input input').on('focusout', function () {
-        if ($(this).val() !== '') {
-            $(this).next().addClass('floating');
-        } else {
-            $(this).next().removeClass('floating');
-        }
-    })
-</script>
-<script>
-    function auto_grow(element) {
-        element.style.height = "5px";
-        element.style.height = (element.scrollHeight)+"px";
-    }
-    //last app
-    let files_container = $('.files__container');
-    let text = $('.block-13 .text');
-
-    $('.upload-icon,.upload-icon+.text').on('click', function () {
-        $('#files-input').val('');
-        $('#files-input').click();
-        files_container.hide();
-        files_container.empty();
-    });
-    $('#files-input').on('change', function () {
-        let files = $('#files-input').prop('files');
-
-
-        Object.keys(files).forEach(item => {
-
-            files_container.append('<div class="file-name">' + files[item].name + '</div>')
-        });
-        text.hide();
-        files_container.show();
-
-    });
+    quizStart()
 </script>
 </body>
 </html>

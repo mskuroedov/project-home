@@ -16,11 +16,18 @@
       img{
         max-width: 100%;
         width: 100%;
+        transition: all .2s;
       }
       &:hover{
         img{
           transform: scale(1.05);
         }
+      }
+    }
+    @media(max-width: $mdWidth){
+      flex-wrap: wrap;
+      a{
+        width: 50%;
       }
     }
   }

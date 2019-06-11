@@ -4,6 +4,10 @@ footer{
   background: #222;
   .logo{
     max-width: 100%;
+
+    @media(max-width: $mdWidth){
+      margin-bottom: 2rem;
+    }
   }
 
   .phone{

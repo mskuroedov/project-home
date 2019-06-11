@@ -13,6 +13,27 @@
       flex: 1;
       margin-left: 1rem;
     }
+
+    .error-block{
+      background: #ff6657;
+      padding: 1.5rem 1rem;
+      color: white;
+      font-size: .9rem;
+      text-align: center;
+      border-radius: 1rem;
+      margin-top: 3rem;
+      display: none;
+    }
+    .success-block{
+      background: #77EF78;
+      padding: 1.5rem 1rem;
+      color: white;
+      font-size: .9rem;
+      text-align: center;
+      display: none;
+      border-radius: 1rem;
+      margin-top: 3rem;
+    }
   }
 
   .form__block{
@@ -22,6 +43,7 @@
       width: 22%;
       padding: 0 .5rem;
     }
+
   }
   .policy-link{
     margin-top: 3rem;
