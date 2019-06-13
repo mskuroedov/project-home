@@ -14,7 +14,10 @@
   align-items: center;
   justify-content: space-between;
   color: white;
-
+  overflow: scroll;
+  @media(max-width: $mdWidth){
+    padding: 3rem 1rem;
+  }
   .close-btn {
     background: transparent;
     border: 0;
@@ -37,6 +40,9 @@
     font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 3rem;
+    @media (max-width: $mdWidth) {
+      font-size: 1.2rem;
+    }
   }
 
   &__checkbox {
@@ -67,6 +73,9 @@
       text-rendering: auto;
       -webkit-font-smoothing: antialiased;
 
+      @media (max-width: $mdWidth) {
+        font-size: 1rem;
+      }
       &:after {
         content: '';
         position: absolute;
@@ -90,6 +99,81 @@
         left: .5rem;
         font-size: 1.1rem;
         opacity: 0;
+      }
+    }
+
+    &.sm{
+      label{
+        font-size: 1rem;
+        padding-left: 2rem;
+        line-height: 1rem;
+        &:after{
+          width: 1.2rem;
+          height: 1.2rem;
+        }
+        &:before {
+          left: 0.25rem;
+          font-size: .7rem;
+          top: 0.15rem;
+        }
+      }
+    }
+  }
+
+  &__input{
+    display: block;
+    box-shadow: none;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #333;
+    padding: .5rem 1rem;
+    width: 100%;
+  }
+
+  &__radio-imgs{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+
+    &--tile{
+      width: 200px;
+      margin: 2rem;
+
+      input{
+        display: none;
+        &:checked + .content{
+          border-color: yellow;
+        }
+      }
+      .content{
+        overflow: hidden;
+        border: 2px solid transparent;
+        transition: all .2s;
+        border-radius:5px;
+        cursor: pointer;}
+      img{
+        width: 100%;
+        max-width: 100%;
+      }
+      .label{
+        display: block;
+        margin-bottom: 0;
+        padding: .5rem;
+        text-align: center;
+        background: white;
+        color: #000;
+        font-size: .8rem;
+      }
+      &:hover{
+        .content{
+          border-color:rgba(255,255,0,.4)
+        }
+      }
+      @media(max-width: $mdWidth){
+        width: 100%;
+        margin: 0;
+        margin-bottom: 1rem;
       }
     }
   }

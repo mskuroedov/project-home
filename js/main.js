@@ -35,6 +35,7 @@ $(document).ready(function () {
 
 
 // $('.block-4').parallax({imageSrc: 'assets/block-4-bg.jpg'});
+$(".block-4 .parallax").paroller({ factor: 0.5, factorXs: 0.2, });
 
 
 //input float

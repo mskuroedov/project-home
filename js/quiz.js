@@ -1,4 +1,4 @@
-var step = 0;
+var step = 3;
 
 function quizStart() {
     $('#quiz').fadeIn();
@@ -29,7 +29,7 @@ function showPrevStep() {
 }
 
 function finishQuiz() {
-    alert('finished');
+    // alert('finished');
     quizStop();
     step = 0;
     $('#quiz input[type="text"]').val('');

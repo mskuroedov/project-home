@@ -6,7 +6,7 @@ $(document).ready(function () {
     });
 
     $('input[required]').on('focusout', function () {
-console.log($(this))
+// console.log($(this))
         if ($(this).attr('data-inputmask')) {
 
             if ($(this).inputmask("isComplete")) {

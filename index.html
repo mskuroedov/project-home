@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Project home </title>
+    <title>ПроектХоум</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic"
           rel="stylesheet">
@@ -695,25 +695,125 @@
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="1" style="display: none">
                 <div class="quiz__title">Сколько примерно м2</div>
-                <input type="text">
+                <input type="text" class="quiz__input" placeholder="100">
             </div>
-            <div class="col-12 col-md-5 mx-auto" quiz-step="2" style="display: none">
+            <div class="col-12 col-md-8 mx-auto" quiz-step="2" style="display: none">
                 <div class="quiz__title">Какой материал рассматриваете для строительства</div>
+                <div class="row">
+                    <div class="col-12 col-md-6">
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m1">
+                            <label for="m1">Кирпич</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m2">
+                            <label for="m2">Газобетон</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m3">
+                            <label for="m3">Деревянный брус клееный</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m4">
+                            <label for="m4">Каркасный дом</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m5">
+                            <label for="m5">Технология Фахверк</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m6">
+                            <label for="m6">Монолит</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m7">
+                            <label for="m7">СИП панели</label>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m8">
+                            <label for="m8">Комбинированный (дерево-камень)</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m9">
+                            <label for="m9">Керамический блок</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m10">
+                            <label for="m10">Пенобетон</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m11">
+                            <label for="m11">Арболит</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m12">
+                            <label for="m12">Керамзитобетон</label>
+                        </div>
+                        <div class="quiz__checkbox sm">
+                            <input type="checkbox" id="m13">
+                            <label for="m13">Другое</label>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-5 mx-auto" quiz-step="3" style="display: none">
+            <div class="col-12 col-md-9 mx-auto text-center" quiz-step="3" style="display: none">
                 <div class="quiz__title">Выберите стиль дома(один)</div>
+                <div class="quiz__radio-imgs">
+                    <div class="quiz__radio-imgs--tile">
+                        <input type="radio" name="type" id="t1">
+                        <label for="t1" class="content">
+                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="label">Модерн</span>
+                        </label>
+                    </div>
+                    <div class="quiz__radio-imgs--tile">
+                        <input type="radio" name="type" id="t2">
+                        <label for="t2" class="content">
+                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="label">Финский</span>
+                        </label>
+                    </div>
+                    <div class="quiz__radio-imgs--tile">
+                        <input type="radio" name="type" id="t3">
+                        <label for="t3" class="content">
+                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="label">Райт</span>
+                        </label>
+                    </div>
+                    <div class="quiz__radio-imgs--tile">
+                        <input type="radio" name="type" id="t4">
+                        <label for="t4" class="content">
+                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="label">Европейский</span>
+                        </label>
+                    </div>
+                    <div class="quiz__radio-imgs--tile">
+                        <input type="radio" name="type" id="t5">
+                        <label for="t5" class="content">
+                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="label">Замковый</span>
+                        </label>
+                    </div>
+                    <div class="quiz__radio-imgs--tile">
+                        <input type="radio" name="type" id="t6">
+                        <label for="t6" class="content">
+                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="label">Фахверк</span>
+                        </label>
+                    </div>
+                </div>
+
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="4" style="display: none">
                 <div class="quiz__title">Как вас зовут?</div>
-                <input type="text">
+                <input type="text" class="quiz__input" placeholder="Имя Фамилия">
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="5" style="display: none">
                 <div class="quiz__title">Контактные данные</div>
-                <input type="text">
-            </div>
-            <div class="col-12 col-md-5 mx-auto" quiz-step="6" style="display: none">
-                <div class="quiz__title">Ваша почта</div>
-                <input type="text">
+                <input type="text" class="quiz__input mb-3" placeholder="+79991564806">
+                <input type="text" class="quiz__input" placeholder="example@mail.ru">
             </div>
         </div>
     </div>
@@ -723,27 +823,33 @@
                 <button class="btn btn-primary" onclick="showNextStep()">next question</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="1" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
+                    question
+                </button>
                 <button class="btn btn-primary" onclick="showNextStep()">next question</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="2" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
+                    question
+                </button>
                 <button class="btn btn-primary" onclick="showNextStep()">next question</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="3" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
+                    question
+                </button>
                 <button class="btn btn-primary" onclick="showNextStep()">next question</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="4" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
+                    question
+                </button>
                 <button class="btn btn-primary" onclick="showNextStep()">next question</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="5" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
-                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
-            </div>
-            <div class="col-12 col-md-5 mx-auto" quiz-step="6" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev question</button>
+                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
+                    question
+                </button>
                 <button class="btn btn-primary" onclick="finishQuiz()">finish quiz</button>
             </div>
         </div>
@@ -759,9 +865,10 @@
 <script src="js/jquery.paroller.min.js"></script>
 <script src="js/main.js"></script>
 <script src="js/quiz.js"></script>
+<script src="js/jquery.inputmask.bundle.min.js"></script>
+<script src="js/inputmask-scripts.js"></script>
 <script>
-    // quizStart()
-    $(".block-4 .parallax").paroller({ factor: 0.5, factorXs: 0.2, });
+    quizStart()
 </script>
 </body>
 </html>

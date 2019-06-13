@@ -645,7 +645,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: white; }
+  color: white;
+  overflow: scroll; }
+  @media (max-width: 767px) {
+    .quiz {
+      padding: 3rem 1rem; } }
   .quiz .close-btn {
     background: transparent;
     border: 0;
@@ -661,6 +665,9 @@ footer {
     font-size: 1.7rem;
     font-weight: bold;
     margin-bottom: 3rem; }
+    @media (max-width: 767px) {
+      .quiz__title {
+        font-size: 1.2rem; } }
   .quiz__checkbox {
     margin-bottom: 1rem; }
     .quiz__checkbox input {
@@ -679,6 +686,9 @@ footer {
       font-variant: normal;
       text-rendering: auto;
       -webkit-font-smoothing: antialiased; }
+      @media (max-width: 767px) {
+        .quiz__checkbox label {
+          font-size: 1rem; } }
       .quiz__checkbox label:after {
         content: '';
         position: absolute;
@@ -700,3 +710,58 @@ footer {
         left: .5rem;
         font-size: 1.1rem;
         opacity: 0; }
+    .quiz__checkbox.sm label {
+      font-size: 1rem;
+      padding-left: 2rem;
+      line-height: 1rem; }
+      .quiz__checkbox.sm label:after {
+        width: 1.2rem;
+        height: 1.2rem; }
+      .quiz__checkbox.sm label:before {
+        left: 0.25rem;
+        font-size: .7rem;
+        top: 0.15rem; }
+  .quiz__input {
+    display: block;
+    box-shadow: none;
+    border-radius: 5px;
+    background: white;
+    border: 1px solid #333;
+    padding: .5rem 1rem;
+    width: 100%; }
+  .quiz__radio-imgs {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center; }
+    .quiz__radio-imgs--tile {
+      width: 200px;
+      margin: 2rem; }
+      .quiz__radio-imgs--tile input {
+        display: none; }
+        .quiz__radio-imgs--tile input:checked + .content {
+          border-color: yellow; }
+      .quiz__radio-imgs--tile .content {
+        overflow: hidden;
+        border: 2px solid transparent;
+        transition: all .2s;
+        border-radius: 5px;
+        cursor: pointer; }
+      .quiz__radio-imgs--tile img {
+        width: 100%;
+        max-width: 100%; }
+      .quiz__radio-imgs--tile .label {
+        display: block;
+        margin-bottom: 0;
+        padding: .5rem;
+        text-align: center;
+        background: white;
+        color: #000;
+        font-size: .8rem; }
+      .quiz__radio-imgs--tile:hover .content {
+        border-color: rgba(255, 255, 0, 0.4); }
+      @media (max-width: 767px) {
+        .quiz__radio-imgs--tile {
+          width: 100%;
+          margin: 0;
+          margin-bottom: 1rem; } }
