@@ -1,5 +1,5 @@
 <?php
- $to = 'proekt.h116@gmail.com';
+ $to = 'mskuroedov@gmail.com';
  $subject = 'Заявка с сайта проектХоум - Первая заявка';
  $result = ['result' => true];
 
