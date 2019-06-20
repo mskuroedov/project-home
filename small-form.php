@@ -1,9 +1,8 @@
 <?php
- $to = 'mskuroedov@gmail.com';
- $subject = 'Small application';
+ $to = 'proekt.h116@gmail.com';
+ $subject = 'Заявка с сайта проектХоум - Первая заявка';
  $result = ['result' => true];
-// $path = 'https://mskuroedov.com';
-// $file = $path . "/" . $filename;
+
 header('Content-Type: application/json');
 
 if (!isset($_POST['name']) || $_POST['name'] === '') {

@@ -3,7 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="apple-touch-icon" sizes="57x57" href="fav/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="fav/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="fav/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="fav/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="fav/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="fav/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="fav/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="fav/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="fav/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="fav/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="fav/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="fav/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="fav/favicon-16x16.png">
+    <link rel="manifest" href="fav/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="fav/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
     <title>ПроектХоум</title>
     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,700&display=swap&subset=cyrillic"
@@ -30,16 +46,16 @@
             <div class="col-12 col-md-4 d-none d-md-block">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="#block" class="">Работы</a>
+                        <a href="#works" class="">Работы</a>
                     </li>
                     <li class="nav-item">
-                        <a href="#block" class="">Заявка на расчет</a>
+                        <a href="#receipt-app" class="">Заявка на расчет</a>
                     </li>
                 </ul>
             </div>
             <div class="col-6 col-md-auto ml-auto">
-                <a href="tel:89997777777" class="phone"><i class="fas fa-phone"></i> +7 (999) 111-11-11</a>
-                <a href="mailto:renstroi@mail.ru" class="mail">renstroi@mail.ru</a>
+                <a href="tel:+7 (905) 316-34-53" class="phone"><i class="fas fa-phone"></i> +7 (905) 316-34-53</a>
+                <a href="mailto:proekt.h116@gmail.com" class="mail">proekt.h116@gmail.com</a>
             </div>
         </div>
     </div>
@@ -55,49 +71,33 @@
                 <div class="promo__text">Заполните анкету и мы подберем несколько вариантов готовых проектов и вышлем на
                     почту
                 </div>
-                <a href="#" role="button" class="btn btn-lg btn-warning" id="quiz-btn">Заполнить анкету</a>
+                <a href="#" role="button" class="btn btn-lg btn-success" id="quiz-btn">Заполнить анкету</a>
             </div>
         </div>
     </div>
 </section>
-<section class="block-1">
+<section id="works" class="block-1">
     <div class="container-fluid">
         <div class="row">
             <div class="col-12 text-center">
                 <div class="title">Наши работы:</div>
             </div>
             <div id="our-works" class="gallery">
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
+                <a href="assets/our-proj/1.jpg">
+                    <img src="assets/our-proj/1.jpg"/>
                 </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
+                <a href="assets/our-proj/2.jpg">
+                    <img src="assets/our-proj/2.jpg"/>
                 </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
+                <a href="assets/our-proj/3.jpg">
+                    <img src="assets/our-proj/3.jpg"/>
                 </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
+                <a href="assets/our-proj/4.jpg">
+                    <img src="assets/our-proj/4.jpg"/>
                 </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
+                <a href="assets/our-proj/5.jpg">
+                    <img src="assets/our-proj/5.jpg"/>
                 </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
-                </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
-                </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
-                </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
-                </a>
-                <a href="assets/logo.png">
-                    <img src="assets/logo.png"/>
-                </a>
-
             </div>
         </div>
     </div>
@@ -290,13 +290,12 @@
         <div class="container">
             <div class="row">
                 <div class="col-12 text-center">
-                    <div class="title">Проектируем дома из всех <br>известных материалов</div>
+                    <div class="title">Проектируем дома из кирпича,<br> газоблока, керамического блока и керамзитобенного блока</div>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
 <section class="block-5">
     <div class="container">
         <form id="small-app">
@@ -322,11 +321,11 @@
                             <input type="text" id="app1mat" name="material">
                             <label for="app1mat">из какого материала?</label>
                         </div>
-                        <button class="btn btn-lg btn-warning" type="submit">Отправить</button>
+                        <button class="btn btn-lg btn-success" type="submit">Отправить</button>
                     </div>
                 </div>
                 <div class="col-12 text-center mt-3">
-                    <span class="policy-link">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных данных</a></span>
+                    <span class="policy-link">Нажимая на кнопку, вы даете согласие на обработку <a href="/policy.pdf" target="_blank">персональных данных</a></span>
                 </div>
                 <div class="col-12 col-md-4 mx-auto">
                     <div class="error-block"></div>
@@ -349,7 +348,7 @@
                 <div class="subtitle">
                     А так же рассчитаем стоимость индивидуального проектирования
                 </div>
-                <button class="btn btn-lg btn-warning">Заполнить анкету</button>
+                <button class="btn btn-lg btn-success">Заполнить анкету</button>
             </div>
         </div>
     </div>
@@ -362,29 +361,35 @@
             </div>
             <div class="col-12">
                 <div id="real-build" class="gallery">
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/1.jpg">
+                        <img src="assets/stroika/1.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/2.jpg">
+                        <img src="assets/stroika/2.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/3.jpg">
+                        <img src="assets/stroika/3.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/4.jpg">
+                        <img src="assets/stroika/4.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/5.jpg">
+                        <img src="assets/stroika/5.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/6.jpg">
+                        <img src="assets/stroika/6.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/7.JPG">
+                        <img src="assets/stroika/7.JPG"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/stroika/8.JPG">
+                        <img src="assets/stroika/8.JPG"/>
+                    </a>
+                    <a href="assets/stroika/9.jpg">
+                        <img src="assets/stroika/9.jpg"/>
+                    </a>
+                    <a href="assets/stroika/10.jpg">
+                        <img src="assets/stroika/10.jpg"/>
                     </a>
 
                 </div>
@@ -412,22 +417,22 @@
             <div class="col-12 px-0">
                 <div class="img__block">
                     <div class="item">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/nadzor/1.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="item">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/nadzor/2.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="item">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/nadzor/6.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="item">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/nadzor/3.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="item">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/nadzor/4.jpg" class="img-fluid" alt="">
                     </div>
                     <div class="item">
-                        <img src="./assets/logo.png" alt="">
+                        <img src="./assets/nadzor/5.jpg" class="img-fluid" alt="">
                     </div>
                 </div>
             </div>
@@ -446,17 +451,17 @@
         <div class="row">
             <div class="col-12">
                 <div id="feedback" class="gallery">
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/fb/1.jpg">
+                        <img src="assets/fb/1.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/fb/2.jpg">
+                        <img src="assets/fb/2.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/fb/3.jpg">
+                        <img src="assets/fb/3.jpg"/>
                     </a>
-                    <a href="assets/logo.png">
-                        <img src="assets/logo.png"/>
+                    <a href="assets/fb/4.jpg">
+                        <img src="assets/fb/4.jpg"/>
                     </a>
                 </div>
 
@@ -520,9 +525,9 @@
     <div class="container">
         <div class="row align-items-center">
             <div class="col-12 col-md-6 text-center">
-                <div class="title">Работаем по РФ</div>
+                <div class="title">Работаем по РТ</div>
                 <div class="text">Мы создаем чат по Вашему проекту в Whatsapp, Telegram, Viber, Skype</div>
-                <div class="subtitle">Не имеет значение расстояние работаем онлайн по всей России</div>
+                <div class="subtitle">Не имеет значение расстояние работаем онлайн по всему региону</div>
             </div>
             <div class="col-12 col-md-6">
                 <img src="./assets/logo.png" alt="" class="img-fluid">
@@ -600,7 +605,7 @@
         </div>
     </div>
 </section>
-<section class="block-13">
+<section id="receipt-app" class="block-13">
     <div class="container">
         <div class="row">
             <div class="col-12 text-center">
@@ -634,8 +639,8 @@
                         <label for="">Укажите свой Email *</label>
                         <input type="text" name="mail">
                     </div>
-                    <button class="btn btn-block btn-warning mt-4" type="submit">Отправить</button>
-                    <div class="personal-text">Нажимая на кнопку, вы даете согласие на обработку <a href="#">персональных
+                    <button class="btn btn-block btn-success mt-4" type="submit">Отправить</button>
+                    <div class="personal-text">Нажимая на кнопку, вы даете согласие на обработку <a href="/policy.pdf" target="_blank">персональных
                         данных</a></div>
                     <div class="error-block"></div>
                     <div class="success-block">
@@ -654,15 +659,20 @@
                 <img class="logo" src="./assets/logo.svg"/>
             </div>
             <div class="col-12 col-md-4 ml-auto text-center text-md-right">
-                <a href="tel:89997777777" class="phone"><i class="fas fa-phone"></i> +7 (999) 111-11-11</a>
-                <a href="mailto:renstroi@mail.ru" class="mail">renstroi@mail.ru</a>
+                <a href="tel:+7 (905) 316-34-53" class="phone"><i class="fas fa-phone"></i> +7 (905) 316-34-53</a>
+                <a href="mailto:proekt.h116@gmail.com" class="mail">proekt.h116@gmail.com</a>
             </div>
         </div>
     </div>
 </footer>
 
 <section id="quiz" class="quiz" style="display: none">
-
+    <div class="error__block" style="display: none">
+        <div class="msg"></div>
+    </div>
+    <div class="success__block" style="display: none">
+        <div class="msg">Ваша заявка успешно отправлена! <br> Мы скоро свяжемся с вами!</div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-auto ml-auto">
@@ -677,19 +687,19 @@
             <div class="col-12 col-md-5 mx-auto" quiz-step="0">
                 <div class="quiz__title">Сколько этажей?</div>
                 <div class="quiz__checkbox">
-                    <input type="checkbox" id="q1">
+                    <input type="checkbox" id="q1" floors="1 этаж">
                     <label for="q1">1 этаж</label>
                 </div>
                 <div class="quiz__checkbox">
-                    <input type="checkbox" id="q2">
+                    <input type="checkbox" id="q2" floors="1 этаж + мансарда">
                     <label for="q2">1 этаж + мансарда</label>
                 </div>
                 <div class="quiz__checkbox">
-                    <input type="checkbox" id="q3">
+                    <input type="checkbox" id="q3" floors="2 этажа">
                     <label for="q3">2 этажа</label>
                 </div>
                 <div class="quiz__checkbox">
-                    <input type="checkbox" id="q4">
+                    <input type="checkbox" id="q4" floors="3 этажа">
                     <label for="q4">3 этажа</label>
                 </div>
             </div>
@@ -764,42 +774,42 @@
                     <div class="quiz__radio-imgs--tile">
                         <input type="radio" name="type" id="t1">
                         <label for="t1" class="content">
-                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="photo"><img src="./assets/quiz-photo/modern.jpg" alt="" class="img-fluid"></span>
                             <span class="label">Модерн</span>
                         </label>
                     </div>
                     <div class="quiz__radio-imgs--tile">
                         <input type="radio" name="type" id="t2">
                         <label for="t2" class="content">
-                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="photo"><img src="./assets/quiz-photo/fin.jpg" alt="" class="img-fluid"></span>
                             <span class="label">Финский</span>
                         </label>
                     </div>
                     <div class="quiz__radio-imgs--tile">
                         <input type="radio" name="type" id="t3">
                         <label for="t3" class="content">
-                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="photo"><img src="./assets/quiz-photo/rite.jpg" alt="" class="img-fluid"></span>
                             <span class="label">Райт</span>
                         </label>
                     </div>
                     <div class="quiz__radio-imgs--tile">
                         <input type="radio" name="type" id="t4">
                         <label for="t4" class="content">
-                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="photo"><img src="./assets/quiz-photo/european.jpg" alt="" class="img-fluid"></span>
                             <span class="label">Европейский</span>
                         </label>
                     </div>
                     <div class="quiz__radio-imgs--tile">
                         <input type="radio" name="type" id="t5">
                         <label for="t5" class="content">
-                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="photo"><img src="./assets/quiz-photo/zamk.jpg" alt="" class="img-fluid"></span>
                             <span class="label">Замковый</span>
                         </label>
                     </div>
                     <div class="quiz__radio-imgs--tile">
                         <input type="radio" name="type" id="t6">
                         <label for="t6" class="content">
-                            <img src="./assets/logo.png" alt="" class="img-fluid">
+                            <span class="photo"><img src="./assets/quiz-photo/fah.jpg" alt="" class="img-fluid"></span>
                             <span class="label">Фахверк</span>
                         </label>
                     </div>
@@ -812,45 +822,45 @@
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="5" style="display: none">
                 <div class="quiz__title">Контактные данные</div>
-                <input type="text" class="quiz__input mb-3" placeholder="+79991564806">
-                <input type="text" class="quiz__input" placeholder="example@mail.ru">
+                <input type="text" name="phone" class="quiz__input mb-3" placeholder="+79991564806">
+                <input type="text" name="email" class="quiz__input" placeholder="example@mail.ru">
             </div>
         </div>
     </div>
     <div class="container">
         <div class="row">
             <div class="col-12 col-md-5 mx-auto" quiz-step="0">
-                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+                <button class="btn btn-success" onclick="showNextStep()">Далее</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="1" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
-                    question
+                <button class="btn btn-outline-success mr-2" onclick="showPrevStep()">
+                    <i class="fas fa-arrow-left"></i>
                 </button>
-                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+                <button class="btn btn-success" onclick="showNextStep()">Далее</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="2" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
-                    question
+                <button class="btn btn-outline-success mr-2 " onclick="showPrevStep()">
+                    <i class="fas fa-arrow-left"></i>
                 </button>
-                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+                <button class="btn btn-success" onclick="showNextStep()">Далее</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="3" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
-                    question
+                <button class="btn btn-outline-success mr-2 " onclick="showPrevStep()">
+                    <i class="fas fa-arrow-left"></i>
                 </button>
-                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+                <button class="btn btn-success" onclick="showNextStep()">Далее</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="4" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
-                    question
+                <button class="btn btn-outline-success mr-2 " onclick="showPrevStep()">
+                    <i class="fas fa-arrow-left"></i>
                 </button>
-                <button class="btn btn-primary" onclick="showNextStep()">next question</button>
+                <button class="btn btn-success" onclick="showNextStep()">Далее</button>
             </div>
             <div class="col-12 col-md-5 mx-auto" quiz-step="5" style="display: none">
-                <button class="btn btn-primary btn-outline-secondary text-white" onclick="showPrevStep()">prev
-                    question
+                <button class="btn btn-outline-success mr-2 " onclick="showPrevStep()">
+                    <i class="fas fa-arrow-left"></i>
                 </button>
-                <button class="btn btn-primary" onclick="finishQuiz()">finish quiz</button>
+                <button class="btn btn-success finish-quiz">Отправить</button>
             </div>
         </div>
     </div>
@@ -861,14 +871,11 @@
 <script src="js/owl.carousel.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/dist/js/lightgallery.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lightgallery@1.6.12/modules/lg-thumbnail.min.js"></script>
-<!--<script src="js/parallax.min.js"></script>-->
+
 <script src="js/jquery.paroller.min.js"></script>
 <script src="js/main.js"></script>
-<script src="js/quiz.js"></script>
 <script src="js/jquery.inputmask.bundle.min.js"></script>
 <script src="js/inputmask-scripts.js"></script>
-<script>
-    quizStart()
-</script>
+<script src="js/quiz.js"></script>
 </body>
 </html>

@@ -35,7 +35,7 @@ $(document).ready(function () {
 
 
 // $('.block-4').parallax({imageSrc: 'assets/block-4-bg.jpg'});
-$(".block-4 .parallax").paroller({ factor: 0.5, factorXs: 0.2, });
+$(".block-4 .parallax").paroller({ factor: 0.2, factorXs: .1, });
 
 
 //input float
@@ -138,4 +138,15 @@ $('#last-form button[type="submit"]').on('click', function (e) {
             }
         }
     })
-})
+});
+
+$('header .nav-item a').on('click', function (e) {
+    e.preventDefault();
+    let el = document.querySelector(e.target.attributes.href.value)
+    let offset = $(e.target.attributes.href.value).offset().top;
+    window.scroll({
+        top: offset,
+        left: 0,
+        behavior: 'smooth'
+    });
+});

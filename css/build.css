@@ -144,10 +144,12 @@ header {
     flex-wrap: wrap; }
     .block-1 .gallery a {
       width: 20%;
-      overflow: hidden; }
+      overflow: hidden;
+      text-align: center; }
       .block-1 .gallery a img {
-        max-width: 100%;
-        transition: all .2s; }
+        max-width: 120%;
+        transition: all .2s;
+        min-height: 100%; }
       .block-1 .gallery a:hover img {
         transform: scale(1.05); }
     @media (max-width: 767px) {
@@ -306,7 +308,7 @@ header {
   .block-5 .title {
     color: white;
     margin-bottom: 3rem; }
-  .block-5 form .btn-warning {
+  .block-5 form .btn-success {
     border-radius: 25px;
     font-size: .9rem;
     flex: 1;
@@ -354,7 +356,7 @@ header {
         .block-5 .form__block .form_input {
           width: 100%;
           margin-bottom: 2rem; }
-        .block-5 .form__block .btn-warning {
+        .block-5 .form__block .btn-success {
           margin: 0; } }
 
 .block-6 {
@@ -423,7 +425,8 @@ header {
     flex-wrap: wrap; }
     .block-8 .img__block .item {
       width: 33.333333%;
-      flex: 33.333333%; }
+      flex: 33.333333%;
+      max-width: 33.333333%; }
       .block-8 .img__block .item img {
         width: 100%;
         max-width: 100%; }
@@ -444,10 +447,17 @@ header {
     align-items: center; }
     .block-9 .gallery a {
       width: 25%;
-      overflow: hidden; }
+      overflow: hidden;
+      min-height: 250px;
+      max-height: 250px;
+      position: relative; }
       .block-9 .gallery a img {
-        max-width: 100%;
-        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        height: 100%;
         transition: all .2s; }
       .block-9 .gallery a:hover img {
         transform: scale(1.05); }
@@ -455,7 +465,13 @@ header {
       .block-9 .gallery {
         flex-wrap: wrap; }
         .block-9 .gallery a {
-          width: 50%; } }
+          width: 100%;
+          min-height: auto;
+          max-height: none;
+          margin-bottom: 1rem; }
+          .block-9 .gallery a img {
+            position: relative;
+            width: 100%; } }
 
 .block-10 {
   padding-top: 3rem;
@@ -740,16 +756,30 @@ footer {
       .quiz__radio-imgs--tile input {
         display: none; }
         .quiz__radio-imgs--tile input:checked + .content {
-          border-color: yellow; }
+          border-color: #77ef78; }
       .quiz__radio-imgs--tile .content {
         overflow: hidden;
         border: 2px solid transparent;
         transition: all .2s;
         border-radius: 5px;
         cursor: pointer; }
-      .quiz__radio-imgs--tile img {
-        width: 100%;
-        max-width: 100%; }
+      .quiz__radio-imgs--tile .photo {
+        display: block;
+        max-height: 110px;
+        height: 110px;
+        text-align: center;
+        overflow: hidden;
+        position: relative;
+        width: 195px;
+        min-width: 100%; }
+        .quiz__radio-imgs--tile .photo img {
+          position: absolute;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          width: 100%; }
       .quiz__radio-imgs--tile .label {
         display: block;
         margin-bottom: 0;
@@ -759,9 +789,47 @@ footer {
         color: #000;
         font-size: .8rem; }
       .quiz__radio-imgs--tile:hover .content {
-        border-color: rgba(255, 255, 0, 0.4); }
+        border-color: rgba(119, 239, 120, 0.4); }
       @media (max-width: 767px) {
         .quiz__radio-imgs--tile {
           width: 100%;
           margin: 0;
           margin-bottom: 1rem; } }
+  .quiz .error__block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #ff6657;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 20px;
+    width: 300px;
+    height: 120px;
+    z-index: 10; }
+    .quiz .error__block .msg {
+      font-size: 1.2rem;
+      text-align: center;
+      color: white; }
+  .quiz .success__block {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #77EF78;
+    padding: 2rem;
+    margin: auto;
+    border-radius: 20px;
+    width: 300px;
+    height: 140px;
+    z-index: 10; }
+    .quiz .success__block .msg {
+      font-size: 1.1rem;
+      text-align: center;
+      color: white; }
+  .quiz .btn-outline-warning {
+    color: #ffc107; }
+    .quiz .btn-outline-warning:hover {
+      color: white; }

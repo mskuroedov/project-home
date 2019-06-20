@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
 
-    $('[data-inputmask]').inputmask({
-        jitMasking: false
-    });
+    // $('[data-inputmask],[data-inputmask-regex]').inputmask({
+    //     jitMasking: true
+    // });
 
     $('input[required]').on('focusout', function () {
 // console.log($(this))

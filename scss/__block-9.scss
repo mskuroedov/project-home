@@ -13,9 +13,16 @@
     a{
       width: 25%;
       overflow: hidden;
+      min-height: 250px;
+      max-height: 250px;
+      position: relative;
       img{
-        max-width: 100%;
-        width: 100%;
+        position: absolute;
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: 0;
+        height:100%;
         transition: all .2s;
       }
       &:hover{
@@ -27,7 +34,14 @@
     @media(max-width: $mdWidth){
       flex-wrap: wrap;
       a{
-        width: 50%;
+        width: 100%;
+        min-height: auto;
+        max-height: none;
+        margin-bottom: 1rem;
+        img{
+          position: relative;
+          width: 100%;
+        }
       }
     }
   }
